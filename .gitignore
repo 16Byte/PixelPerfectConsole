@@ -12,6 +12,12 @@
 /[Uu]ser[Ss]ettings/
 *.log
 
+# We're choosing to remove the scene from the sample scenes because it just causes too many issues. Mainly that unity apparently doesn't like opening scenes contained in packages. So I'm just going to include it as a sample scene download in the form of a unitypackage that you can import and put it under the releases section.
+/Samples/Scenes
+/Samples/Scenes.meta
+/Samples/Scenes/DemoScene.unity
+/Samples/Scenes/DemoScene.unity.meta
+
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
 *.blend1.meta
