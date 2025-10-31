@@ -1,0 +1,21 @@
+{
+  "name": "com.playermadegames.ppconsole",
+  "version": "1.0.0",
+  "displayName": "Pixel Perfect Console",
+  "description": "A clean, extensible in-game debug console for Unity. Easily expose methods as console commands using attributes.",
+  "unity": "2021.3",
+  "keywords": [
+    "console",
+    "debug",
+    "commands",
+    "developer",
+    "tools"
+  ],
+  "author": {
+    "name": "PlayerMadeGames",
+    "url": "https://github.com/16Byte/"
+  },
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.6"
+  }
+}
