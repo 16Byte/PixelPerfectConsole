@@ -8,17 +8,17 @@
 
 A lightweight, extensible in-game debug console for Unity that allows developers to expose methods as console commands using simple attributes. Perfect for debugging, testing, and creating developer tools in your Unity projects.
 
-## ✨ Features
+## Features
 
-- **🎯 Attribute-Based Command System** - Mark any method with `[Command("CommandName")]` to instantly make it accessible from the console
-- **🔒 Build Stripping Support** - Keep sensitive developer commands out of production builds with the `strip` parameter
-- **📝 Type-Safe Parameters** - Automatic type conversion for common types (int, float, bool, string, enum, etc.)
-- **📜 Command History** - Navigate previous commands with up/down arrow keys
-- **🎨 Clean UI** - Built with TextMeshPro for crisp, scalable text rendering
-- **⚡ Auto-Discovery** - Automatically finds and registers commands from MonoBehaviours and static methods
-- **💪 Static & Instance Methods** - Support for both static commands and instance-based commands
-- **🔍 Built-in Help System** - `help` command lists all available commands with descriptions
-- **🚀 Zero Setup** - Add prefab to scene and start creating commands immediately
+- **Attribute-Based Command System** - Mark any method with `[Command("CommandName")]` to instantly make it accessible from the console
+- **Build Stripping Support** - Keep sensitive developer commands out of production builds with the `strip` parameter
+- **Type-Safe Parameters** - Automatic type conversion for common types (int, float, bool, string, enum, etc.)
+- **Command History** - Navigate previous commands with up/down arrow keys
+- **Clean UI** - Built with TextMeshPro for crisp, scalable text rendering
+- **Auto-Discovery** - Automatically finds and registers commands from MonoBehaviours and static methods
+- **Static & Instance Methods** - Support for both static commands and instance-based commands
+- **Built-in Help System** - `help` command lists all available commands with descriptions
+- **Zero Setup** - Add prefab to scene and start creating commands immediately
 
 ## 📦 Installation
 
@@ -27,12 +27,14 @@ A lightweight, extensible in-game debug console for Unity that allows developers
 1. Open Unity Package Manager (`Window > Package Manager`)
 2. Click the `+` button in the top-left corner
 3. Select `Add package from git URL...`
-4. Enter: `https://github.com/16Byte/PixelPerfectConsole.git?path=/Assets/PlayerMadeGames/PPConsole`
+4. Enter: `https://github.com/16Byte/PixelPerfectConsole.git`
+   <img width="646" height="310" alt="image" src="https://github.com/user-attachments/assets/de124113-f0bc-4e5e-9e44-70d0b08dbd45" />
+
 
 ### Option 2: Manual Installation
 
 1. Download or clone this repository
-2. Copy the `PPConsole` folder into your project's `Assets` directory
+2. Copy the root folder into your project's `Assets` directory
 
 ## 🚀 Quick Start
 
@@ -190,7 +192,7 @@ var customCommands = new CustomCommands();
 ConsoleManager.Instance.RegisterCommandsFromObject(customCommands);
 ```
 
-## 🎮 Built-in Commands
+## Built-in Commands
 
 The console includes these commands out of the box:
 
@@ -225,7 +227,7 @@ ConsoleManager.Instance.LogWarning("This is a warning");
 ConsoleManager.Instance.LogError("This is an error");
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ### Core Components
 
@@ -243,7 +245,7 @@ The console automatically discovers commands in two ways:
 
 Commands are discovered during `Start()` after all `Awake()` and `OnEnable()` calls have completed.
 
-## 🤝 Contributing
+## 🤝 Contribute
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -265,27 +267,11 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Roadmap
 
-- Built with Unity and TextMeshPro
-- Inspired by classic game console systems
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/16Byte/PixelPerfectConsole/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/16Byte/PixelPerfectConsole/discussions)
-
-## 🗺️ Roadmap
-
-Future features under consideration:
-
+Future features:
 - [ ] Autocomplete suggestions
-- [ ] Command aliasing
-- [ ] Custom parameter type converters
-- [ ] Console command scripts/macros
-- [ ] Remote console via network
-- [ ] Save/load command history between sessions
 
 ---
 
-Made with ❤️ by [PlayerMadeGames](https://github.com/16Byte/)
+Made with ❤️ by PlayerMadeGames
