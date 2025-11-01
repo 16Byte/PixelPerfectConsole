@@ -3,6 +3,9 @@
 [![Unity Version](https://img.shields.io/badge/Unity-2021.3%2B-blueviolet)](https://unity.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+<img width="953" height="536" alt="image" src="https://github.com/user-attachments/assets/f3070e20-d369-4b84-8b7a-a1e9d9136218" />
+
+
 A lightweight, extensible in-game debug console for Unity that allows developers to expose methods as console commands using simple attributes. Perfect for debugging, testing, and creating developer tools in your Unity projects.
 
 ## ✨ Features
