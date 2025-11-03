@@ -48,7 +48,8 @@ namespace PPConsole
 
         private void OnDestroy()
         {
-            if (ConsoleManager.Instance != null)
+            // Check if instance exists without creating it
+            if (ConsoleManager.Exists)
             {
                 ConsoleManager.Instance.OnLogMessage -= OnConsoleLog;
             }

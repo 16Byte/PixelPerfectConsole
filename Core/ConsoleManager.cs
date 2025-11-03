@@ -27,6 +27,8 @@ namespace PPConsole
             }
         }
 
+        public static bool Exists => _instance != null;
+
         private Dictionary<string, CommandInfo> _commands = new Dictionary<string, CommandInfo>(StringComparer.OrdinalIgnoreCase);
         private List<string> _commandHistory = new List<string>();
         private const int MaxHistorySize = 100;
